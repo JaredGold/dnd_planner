@@ -1,0 +1,35 @@
+<h1>All Players</h1>
+<% @players.each do |player| %>
+  <div class="player">
+    <% player.each do |title, value| %>
+      
+      <% if title == "player-name" %>
+        <h3><%= value.capitalize %></h3>
+      <% elsif title == "id"%>
+      <% elsif title == "days-playable" %>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% value.each do |day, avail| %>
+              <tr>
+                <td><%= day %></td>   
+                <td><%= avail ? "✅" : "❌" %></td>   
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+      <% elsif title == "alive" %>
+        <p>Is Alive: <%= value ? "✅" : "❌" %> </p>
+      <% else %>
+        <p><%= title.capitalize %> : <%= value.capitalize %></p>
+      <% end %>
+    <% end %>
+  </div>
+<%end%>
+

@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "player-name": "Jared",
+    "char-name": "Frodo",
+    "race": "halfling",
+    "class": "rogue",
+    "alive": true,
+    "days-playable": {
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": true,
+      "sunday": false
+    }
+  },
+  {
+    "id": 2,
+    "player-name": "Victor",
+    "char-name": "Bilbo",
+    "race": "Dwarf",
+    "class": "Cleric",
+    "alive": true,
+    "days-playable": {
+      "monday": false,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "sunday": true
+    }
+  },
+  {
+    "id": 3,
+    "player-name": "Aidan",
+    "char-name": "Jared",
+    "race": "teifling",
+    "class": "bard",
+    "alive": false,
+    "days-playable": {
+      "monday": true,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "sunday": true
+    }
+  }
+]
